@@ -1,0 +1,197 @@
+:root {
+    --prmry-clr-mainBG: hsl(217, 54%, 11%);
+    --prmry-clr-cardBG: hsl(216, 50%, 16%);
+    --prmry-clr-soft-blue: hsl(215, 51%, 70%);
+    --prmry-clr-cyan: hsl(178, 100%, 50%);
+    --prry-clr-line: hsl(215, 32%, 27%);
+    --prmry-clr-white: hsl(0, 0%, 100%);
+    --prmry-fs: 18px;
+    --prmry-fm: "Outfit", "sans-serif";
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    background-color: var(--prmry-clr-mainBG);
+    align-items: centers;
+    text-align: center;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+* {
+    margin: auto;
+}
+.main-container {
+    width: 80%;
+    max-width: 21.8rem;
+    margin: 75px auto 50px;
+  }
+  
+  .nft-container {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--prmry-clr-cardBG);
+  }
+  /** Image Container  **/
+.image-container {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    max-width: 18.75rem;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .nft-equilibrium-image {
+    background-image: url("./images/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    min-height: 18.75rem;
+    width: 100%;
+  }
+  
+  .color-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 18.75rem;
+    height: auto;
+    background-image: none;
+  }
+  .color-image:hover {
+    background-image: url("./images/icon-view.svg");
+    background-color: var(--prmry-clr-cyan);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20% 20%;
+    opacity: 0.5;
+    transition: background-color ease-in-out 0.3s;
+  }
+  
+
+.nft-equilibrium img {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    display: block;
+}
+/** Container Title **/
+.container-title {
+    padding-top: 0.5rem;
+    text-align: left;
+  }
+  .container-title h1 a {
+    text-decoration: none;
+    font-family: var(--prmry-fm);
+    color: var(--prmry-clr-white);
+    font-weight: 600;
+  }
+  
+  .container-title p {
+    color: var(--prmry-clr-soft-blue);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+/** Pricing and Timing **/
+.container-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem auto 0.5rem 0;
+  }
+
+.pricing,
+.timing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.pricing {
+    color: var(--prmry-clr-cyan);
+    text-align: left;
+}
+
+.timing {
+    gap: 10px;
+    color: var(--prmry-clr-soft-blue);
+    text-align: right;
+}
+
+.pricing-img,
+.timing-img {
+    min-width: 20px;
+    min-height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pricing-img {
+    background-image: url("./images/icon-ethereum.svg");
+}
+
+.timing-img {
+    background-image: url("./images/icon-clock.svg");
+}
+
+.container-line {
+    border: 1px solid var(--prry-clr-line);
+    opacity: 0.5;
+}
+
+
+/** Author **/
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0.5rem;
+}
+
+.author img {
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid var(--prmry-clr-white);
+    width: 10%;
+    height: 10%;
+}
+
+.author p {
+    color: var(--prmry-clr-soft-blue);
+}
+
+.author-name {
+    color: var(--prmry-clr-white);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    /** Main Container **/
+    .main-container {
+      margin-top: 3.75rem;
+    }
+  }
